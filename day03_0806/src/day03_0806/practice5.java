@@ -1,0 +1,45 @@
+package day03_0806;
+
+public class practice5 {
+
+	public static void main(String[] args) {
+	String str = "가나다라마바사";
+	int N = str.length();
+	
+	
+	//1. 뒤집기
+	//문장 글자를 하나씩 집어넣기
+	
+	char[] arr = new char[N];//N만큼의 크기 선언
+		for(int i = 0; i < N; i++) {
+			//새로운 배열 정방향에 문장의 끝부터 하나씩 넣는다.
+			arr[i] = str.charAt(N-1-i);
+		}
+		System.out.println(arr);
+	
+	//2. StringBuilder
+		StringBuilder sb = new StringBuilder();//빌더선언()
+		//sb에 문장을 뒤집어서 붙인다.
+		sb.append(str).reverse();
+		System.out.println(sb);
+	
+	//3. swap
+		//문장을 처음부터 쪼개서 배열을 만들어 둔다.
+		char[] arr2 = str.toCharArray();
+		//반만 작업하면 되니까 나누기 2
+		for(int i = 0; i < N/2;i++) {
+			//앞에거를 임시변수에 집어넣고
+			char tmp = arr2[i];
+			//뒤어거를앞에 넣어두고
+			arr2[i] = arr[N-1-i];
+			//앞에거를 뒤에 옮김 임시변수활용
+			arr2[N-1-i] = tmp;
+			
+		}
+		
+		
+		
+
+	}
+
+}
