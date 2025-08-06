@@ -1,0 +1,25 @@
+package homet;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
+public class trainingbubble {
+
+	public static void main(String[] args) {
+		int[] arr = {5,4,2,3,1};
+		int N = arr.length;
+		
+		for(int i = N -1; i > 0; i--) {
+			for(int j = 0; j < i; j++) {
+				if(arr[j] > arr[j+1]) {
+					int tmp = arr[j];
+					arr[j] = arr[j +1];
+					arr[j+1] = tmp;
+					
+				}
+			}
+		}
+		System.out.println(Arrays.toString(arr));
+	}
+
+}

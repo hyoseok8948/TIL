@@ -4,44 +4,59 @@ import java.util.Scanner;
 
 public class SWEA_의석이똑바로말하자 {
 
-	public static void main(String[] args) throws Exception{
-		//스캐너
+	public static void main(String[] args) throws Exception {
+		// 스캐너
 		Scanner sc = new Scanner(System.in);
-		
-		//테스트 케이스
+
+		// 테스트 케이스
 		int testCase = sc.nextInt();
-		
-		//테스트로 반복하기
-		for(int tc = 1; tc <= testCase; tc++) {	
-		
-		//처음 받아올 때 글자로 받아버린다면?
-		Char[][] arr1 = new Char[][];
-		
-		for(int i = 0; i <= 5; i++) {
-			for(int j = 0; j <= 15; j ++) {
-				arr1[i][j] = sc.next().toCharArray();
+		sc.nextLine();//이게 있어야 인트값을 지운다.
+		// 테스트로 반복하기
+		for (int tc = 1; tc <= testCase; tc++) {
+			// 입력할 문장 5문장
+			String[] inputData = new String[5];
+			// 문장길이 선언 0으로 초기화
+			int maxLong = 0;
+			// 5행 15열 최대
+			String[][] outputArr = new String[5][15];
+			// 출력문
+			String outResult = " ";
+
+			// 문장입력 5줄
+			for (int i = 0; i < 5; i++) {
+				String input = sc.nextLine();
+				inputData[i] = input;
+				// 5줄중 최대 길이 구하기
+				if (input.length() > maxLong) {
+					maxLong = input.length();
+				}
+
 			}
+
+			// charAt으로 문장 분해해서 2차배열에 넣기
+			for (int i = 0; i < 5; i++) { // 행의길이 5
+				for (int j = 0; j < inputData[i].length(); j++) { // 열의길이 각 입력데이터 길이만큼
+					// String valueOf랑 charAt을 둘다쓴다??
+					outputArr[i][j] = String.valueOf(inputData[i].charAt(j));
+
+				}
+			}
+
+			// 세로전환 null값에 컨티뉴
+			for (int c = 0; c < maxLong; c++) {
+				for (int r = 0; r < 5; r++) {
+					// 해당위치가 널값이면 넘어가자
+					if (outputArr[r][c] == null) {
+						continue;
+					}
+					//뒤에 계속 붙이기
+					outResult = outResult + outputArr[r][c];
+				}
+			}
+
+			System.out.println("#" + tc + " " + outResult);
+
 		}
-		
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-		}
-		
 
 	}
 }
-
