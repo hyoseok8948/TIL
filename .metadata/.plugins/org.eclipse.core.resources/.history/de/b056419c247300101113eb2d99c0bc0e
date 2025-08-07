@@ -1,0 +1,25 @@
+package day04_0807;
+
+import java.util.Stack;
+
+public class Stack01_API {
+
+	public static void main(String[] args) {
+		// 숫자를 담을 수 있는 스택이 완성!
+		Stack<Integer> stack = new Stack<>();
+		//문자를 담을수 있는 스택
+		//Stack<String>
+		
+		//주요 메서드
+		//1. push(item -> Integer가 들어온다.(참조자료형))
+		int result = stack.push(10);//반환 결과는 item이 반환된다.
+		System.out.println(result);
+		
+		stack.push(20);
+		stack.push(30);
+		
+		//2.pop()
+		System.out.println(stack.pop());
+	}
+
+}

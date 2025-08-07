@@ -1,0 +1,28 @@
+package day04_0807;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class SWEA_제로 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int testCase = sc.nextInt();
+		
+		String minT = "";
+		
+		for(int tc = 1; tc <= testCase; tc++) {
+			//재현이가 말한거
+			int hyunSaid = sc.nextInt();
+			//재민이가 친거
+			Stack<Integer> minType = new Stack<>();
+			
+			String minT = minType<hyunSaid>; 
+			
+		}
+		
+		
+	}
+
+}

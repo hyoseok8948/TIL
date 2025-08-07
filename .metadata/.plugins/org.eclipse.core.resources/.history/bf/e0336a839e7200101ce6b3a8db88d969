@@ -1,0 +1,54 @@
+package day03_0806;
+
+import java.util.Scanner;
+
+public class SWEA_의석이똑바로말하자 {
+
+	public static void main(String[] args) throws Exception{
+		//스캐너
+		Scanner sc = new Scanner(System.in);
+		
+		//테스트 케이스
+		int testCase = sc.nextInt();
+		
+		//테스트로 반복하기
+		//for(int tc = 1; tc <= testCase; tc++) {	
+		
+		//처음 받아올 때 글자로 받아버린다면?
+		String case1 = sc.next();
+		String case2 = sc.next();
+		String case3 = sc.next();
+		String case4 = sc.next();
+		String case5 = sc.next();
+		
+		System.out.println(case1);
+		System.out.println(case2);
+		System.out.println(case3);
+		System.out.println(case4);
+		System.out.println(case5);
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		}
+		
+
+	}
+
+

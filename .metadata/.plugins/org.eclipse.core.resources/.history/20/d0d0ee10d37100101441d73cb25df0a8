@@ -1,0 +1,19 @@
+package day02_SWEA;
+
+import java.util.Scanner;
+
+public class Following {
+
+	public static void main(String[] args) {
+		
+		
+		//입력을 위한 Scanner
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		
+		
+	}
+
+}

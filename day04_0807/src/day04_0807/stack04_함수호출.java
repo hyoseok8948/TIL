@@ -1,0 +1,39 @@
+package day04_0807;
+
+import java.util.Arrays;
+
+//기초자료형 참조자료형의 차이를 알 수 있도록 하자
+public class stack04_함수호출 {
+
+	public static void main(String[] args) {
+		System.out.println("메인함수 실행");
+		int a = 10;
+		function1();
+		System.out.println(a);
+		System.out.println("메인함수 종료");
+		
+	}
+	
+	private static void function1() {
+		System.out.println("함수1 실행");
+		int a = 20;
+		int[] arr = {1,2,3};
+		System.out.println(Arrays.toString(arr));
+		function2(a, arr);
+		System.out.println(a);
+		System.out.println("함수 1 종료");
+	}
+	
+	
+	//void가 아니라 int[]dmf qksg
+	private static void function2(int a, int arr) { 
+		System.out.println("함수2 실행");
+		System.out.println(a);
+		a = 30;
+		//arr[1] = 1000;
+		arr = new int[] {10,20,30};
+		System.out.println(a);
+		System.out.println("함수2 종료");
+	}
+
+}

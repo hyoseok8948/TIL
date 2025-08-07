@@ -1,0 +1,25 @@
+package day04_0807;
+
+public class stack04_함수호출 {
+
+	public static void main(String[] args) {
+		System.out.println("메인함수 실행");
+		function1();
+		System.out.println("메인함수 종료");
+		
+	}
+	
+	private static void function1() {
+		System.out.println("함수1 실행");
+		function2();
+		System.out.println("함수 1 종료");
+	}
+	
+	
+	
+	private static void function2() { 
+		System.out.println("함수2 실행");
+		System.out.println("함수2 종료");
+	}
+
+}

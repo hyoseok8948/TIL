@@ -1,0 +1,21 @@
+package day04_0807;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class SWEA_제로 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		//int testCase = sc.nextInt();
+		
+		Stack<Integer> minType = new Stack<>();
+		
+			
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,30 @@
+package day03_0806;
+
+import java.util.Scanner;
+
+public class SWEA_1213 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int testCase = 10;
+
+		//문장입력
+		String sentence = sc.next();
+		String pattern = sc.next();
+		
+		//문장길이
+		int N = sentence.length();
+		int M = sentence.length();
+		
+		//합칠 sum 선언해두기 !
+		int sum = 0;
+		
+		
+		//tc만큼 반복하기
+		for(int tc = 0; tc <= 10; tc++) {
+			
+		}
+
+	}
+}

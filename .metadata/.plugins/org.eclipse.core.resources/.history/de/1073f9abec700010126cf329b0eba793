@@ -1,0 +1,9 @@
+package SWEA.view1206;
+
+import java.io.File;
+import java.util.Scanner;
+
+public class Solution {
+	File file = new file();
+	Scanner sc = new Scanner(System.in);
+}

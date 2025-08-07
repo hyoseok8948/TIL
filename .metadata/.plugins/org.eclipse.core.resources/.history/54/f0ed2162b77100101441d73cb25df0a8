@@ -1,0 +1,12 @@
+package day02_SWEA;
+
+import java.util.Scanner;
+
+public class SWEA_sum {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+	}
+
+}

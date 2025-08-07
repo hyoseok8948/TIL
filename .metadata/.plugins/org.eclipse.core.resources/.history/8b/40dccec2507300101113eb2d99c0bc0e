@@ -1,0 +1,53 @@
+package day04_0807;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class SWEA_제로 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		//테스트 케이스 숫자
+		int testCase = sc.nextInt();
+		
+		
+		
+		for(int tc = 1; tc <= testCase; tc++) {
+		int lineCase = sc.nextInt();
+		for(int lc = 1; lc <= lineCase; lc++) {
+		//재민이 입력하는거
+		Stack<Integer> minType = new Stack<>();
+		//재현이 말하는거
+		int hyunSaid = sc.nextInt();
+		    
+			if(hyunSaid == 0) {
+				continue;
+			} else {
+				minType.push(hyunSaid);
+			}
+		int money = minType.pop();
+			
+			
+			
+		}
+			
+			
+
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		}
+		
+	}
+
+}

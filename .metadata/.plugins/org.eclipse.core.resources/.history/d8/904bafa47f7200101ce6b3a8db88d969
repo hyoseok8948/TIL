@@ -1,0 +1,36 @@
+package day03_0806;
+
+
+		import java.nio.charset.StandardCharsets;
+		import java.util.Arrays;
+		import java.util.Scanner;
+
+		public class practice {
+
+			public static void main(String[] args) {
+				String text = "This iss a book";
+				String pattern = "iss";
+				
+			}
+			//찾는 순간 해당 위치의 인덱스를 반환(없으면 -1을 반환하겠다.)
+			public static int matchingFor(String t, String p) {
+				
+				//길이를 뽑아내자
+				int N = t.length();
+				int M = p.length();
+				
+				for(int i = 0; i < N-M+1; i++) {
+					boolean isOk = true;
+					for(int j = 0; j<M; j++) {
+					if(t.charAt(i+j) != p.charAt(j))
+						isOk = false;
+						break;
+					}//패턴 검사 하자.
+					if(isOk = true) {
+						return i;
+					}
+			}
+				return -1;
+
+		}
+		}

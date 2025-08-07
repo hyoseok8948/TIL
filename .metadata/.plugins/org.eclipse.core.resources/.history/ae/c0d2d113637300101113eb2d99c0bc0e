@@ -1,0 +1,52 @@
+package day04_0807;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class SWEA_괄호짝짓기 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int testCase = sc.nextInt();
+		
+		//괄호 담을 스택과 참거짓 확인용 불리언 선언
+		Stack<Character> openClose = new Stack<>();
+		boolean isOk = true;
+		
+		for(int tc = 1; tc <= testCase; tc++) {
+			String inputData = sc.next();
+			int dataLong = inputData.length();
+			for(int j = 0; j < inputData.length(); j++) {
+				//1.여는 괄호 있으면 넣기
+				if(inputData.charAt(j) == '{' || inputData.charAt(j) == '[' || inputData.charAt(j) == '(' || inputData.charAt(j) == '<') {
+					openClose.push(inputData.charAt(j));
+				}
+				else {
+					if(openClose.isEmpty()) {
+						isOk = false;
+						break;
+					}else {
+						char c = openClose.pop();
+					} 
+				}
+				
+			}
+			if(isOk && openClose.isEmpty()) {
+				System.out.println("#" + tc + " 0");
+				
+			}
+			
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

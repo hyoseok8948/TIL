@@ -1,0 +1,50 @@
+package day03_0806;
+
+import java.util.Scanner;
+
+public class SWEA_1213 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int testCase = 10;
+		
+		//찾을문장
+		String sentence = sc.next();
+		//찾는문장
+		String find = sc.next();
+		
+		
+		
+		System.out.println(matchingFor(sentence, find));
+		//테스트 케이스만큼 돌려보자
+//		for(int tc = 0; tc <= 10; tc++) {
+//			
+//			System.out.println(matchingFor(sentence, find));
+//		}
+//		
+		
+		
+	
+	}
+public static int matchingFor(String t, String p) {
+		
+		//길이를 뽑아내자
+		int N = t.length();
+		int M = p.length();
+		
+		for(int i = 0; i < N-M+1; i++) {
+			boolean isOk = true;
+			for(int j = 0; j<M; j++) {
+			if(t.charAt(i+j) != p.charAt(j))
+				isOk = false;
+				break;
+			}//패턴 검사 하자.
+			if(isOk = true) {
+				return i;
+			}
+	}
+		return -1;
+
+}
+}

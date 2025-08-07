@@ -1,0 +1,19 @@
+package day02_SWEA;
+
+public class SWEA_1954_달팽이숫자 {
+
+	public static void main(String[] args) {
+		
+		//입력을 받기 위한 Scanner
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

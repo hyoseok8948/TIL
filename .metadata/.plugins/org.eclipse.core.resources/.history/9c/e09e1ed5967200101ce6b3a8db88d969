@@ -1,0 +1,36 @@
+package day03_0806;
+
+import java.util.Scanner;
+
+public class SWEA_초십자회문 {
+
+	public static void main(String[] args) {
+		//스캐너랑 테스트케이스 선언
+		Scanner sc = new Scanner(System.in);
+		int testCase = sc.nextInt();
+		
+		//테스트 케이스만큼 반복하기
+		for(int tc = 1; tc <= testCase; tc++) {
+			//뒤집을 문장 입력
+			String inputword = sc.next();
+		
+			//문장길이
+			int N = inputword.length();
+			//결과 저장소
+			int num = 0;
+			String arrto = null;
+			//1.뒤집기 , 배열 생성하고 문자를 거꾸로 하나씩 집어넣는다.
+			char[] arr = new char[N];
+			for(int i = 0; i < N; i++) {
+			arr[i] = inputword.charAt(N-1-i);
+			if(arr[i] == inputword.charAt(i)) {
+				num = 1;
+			} else {
+				num = 0;
+			}
+		System.out.println(num);
+			
+}
+}
+	}
+}

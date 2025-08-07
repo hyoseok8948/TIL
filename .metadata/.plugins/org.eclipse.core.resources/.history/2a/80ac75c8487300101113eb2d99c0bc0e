@@ -1,0 +1,31 @@
+package day04_0807;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class SWEA_제로 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		//int testCase = sc.nextInt();
+		
+		//재민이가 입력하는 것
+		Stack<Integer> minType = new Stack<>();
+		//재현이가 말하는 것
+		int hyunSaid = sc.nextInt();
+		
+		//재현이가 말하는게 0이면 pop 
+		if(hyunSaid == 0) {
+			minType.pop();
+		} else { 
+			//아니라면 재현이가 말한 값을 넣는다.
+			minType.push(hyunSaid);
+		}
+			
+		
+		
+		
+	}
+
+}

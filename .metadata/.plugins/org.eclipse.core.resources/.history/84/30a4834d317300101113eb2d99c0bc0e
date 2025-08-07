@@ -1,0 +1,21 @@
+package day04_0807;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class stack05_뒤로앞으로 {
+
+	public static void main(String[] args) {
+		// ctrl+z 실행취소
+		// ctrl+y 실행취소의 취소
+		Scanner sc = new Scanner(System.in);
+		
+		String page = "Google";
+		
+		Stack<String> 뒤로 = new Stack<>();
+		
+		
+
+	}
+
+}

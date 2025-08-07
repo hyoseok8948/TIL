@@ -1,0 +1,31 @@
+package day04_0807;
+
+import java.util.Stack;
+
+public class stack03_괄호검사연습 {
+
+	public static void main(String[] args) {
+		
+		String str = "(()))()()()";
+		
+		Stack<Character> stack = new Stack<>();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

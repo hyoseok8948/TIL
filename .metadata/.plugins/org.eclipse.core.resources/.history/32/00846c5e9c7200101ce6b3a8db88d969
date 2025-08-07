@@ -1,0 +1,71 @@
+package day03_0806;
+
+import java.util.Scanner;
+
+public class SWEA_의석이똑바로말하자 {
+
+	public static void main(String[] args) {
+		//스캐너
+		Scanner sc = new Scanner(System.in);
+		
+		//테스트 케이스
+		int testCase = sc.nextInt();
+		
+		//테스트로 반복하기
+		for(int tc = 1; tc <= testCase; tc++) {	
+		
+		//처음 받아올 때 글자로 받아버린다면?
+	    char[] str1 = sc.next().toCharArray();
+		char[] str2 = sc.next().toCharArray();
+		char[] str3 = sc.next().toCharArray();
+		char[] str4 = sc.next().toCharArray();
+		char[] str5 = sc.next().toCharArray();
+		
+		//길이 구하기
+		int gil_e1 = str1.length;
+		int gil_e2 = str2.length;
+		int gil_e3 = str3.length;
+		int gil_e4 = str4.length;
+		int gil_e5 = str5.length;
+		
+		//길이중 최대길이?
+		
+		
+		//통을 만들어보자
+		char[] sero = null;
+		//반복문을 통해 통에 세로로 집어넣기
+		for(int i = 0; i < 15; i++) {
+			sero[0] = str1[i];
+			sero[1] = str2[i];
+			sero[2] = str3[i];
+			sero[3] = str4[i];
+			sero[4] = str5[i];
+		System.out.println(sero);
+		}
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,50 @@
+package day03_0806;
+
+import java.util.Scanner;
+
+public class SWEA_의석이똑바로말하자 {
+
+	public static void main(String[] args) {
+		//스캐너
+		Scanner sc = new Scanner(System.in);
+		
+		//테스트 케이스
+		int testCase = sc.nextInt();
+		
+		//테스트로 반복하기
+		for(int tc = 0; tc < testCase; tc++) {
+			String str1 = sc.next();
+			String str2 = sc.next();
+			String str3 = sc.next();
+			String str4 = sc.next();
+			String str5 = sc.next();
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		}
+		
+
+	}
+
+}

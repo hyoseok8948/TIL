@@ -1,0 +1,7 @@
+package SWEA.view1206;
+
+import java.util.Scanner;
+
+public class Solution {
+	Scanner sc = new Scanner(System.in);
+}
